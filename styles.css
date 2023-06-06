@@ -13,15 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
 .top {
   background-color: #1f2937;
   display: flex;
-  flex: 1;
 }
 
 .top-content {
@@ -31,7 +28,7 @@ body {
   gap: 100px;
   max-width: 900px;
   margin-bottom: 100px;
-  padding: 5px 20px;
+  padding: 5px 40px;
 }
 
 nav {
@@ -64,11 +61,13 @@ a {
 
 .hero-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.hero-left {
+.hero-text {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -77,13 +76,13 @@ a {
   gap: 10px;
 }
 
-.hero-left p {
+.hero-text p {
   margin: 0;
   font-size: 18px;
   color: #e5e7eb;
 }
 
-.hero-right {
+.hero-image {
   display: flex;
   flex: 1;
   background-color: grey;
@@ -93,7 +92,7 @@ a {
   align-self: center;
 }
 
-.hero-right p {
+.hero-image p {
   text-align: center;
   margin: auto;
 }
@@ -154,7 +153,8 @@ h2 {
   flex-direction: column;
   color: #1f2937;
   width: 800px;
-  padding: 0 20px;
+  padding: 0 40px;
+  gap: 5px;
 }
 
 .quote {
@@ -173,8 +173,7 @@ h2 {
 
 .call-section {
   display: flex;
-  padding: 90px 0;
-  margin: 0 20px;
+  padding: 90px 20px;
 }
 
 .call-content {
@@ -182,7 +181,7 @@ h2 {
   justify-content: space-around;
   margin: auto;
   background-color: #3882f6;
-  padding: 45px 20px;
+  padding: 45px 40px;
   color: white;
   border-radius: 7px;
   width: 900px;
@@ -194,7 +193,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  /* flex: 1; */
 }
 
 .call-right {
@@ -223,4 +221,8 @@ button.white-border {
 
 .footer {
   background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 20px;
+  font-weight: 300;
 }
