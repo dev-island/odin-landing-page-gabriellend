@@ -31,6 +31,7 @@ body {
   gap: 100px;
   max-width: 900px;
   margin-bottom: 100px;
+  padding: 5px 20px;
 }
 
 nav {
@@ -44,6 +45,7 @@ nav {
 .logo {
   color: #f9faf8;
   font-size: 24px;
+  font-weight: 500;
 }
 
 ul {
@@ -63,6 +65,7 @@ a {
 .hero-section {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .hero-left {
@@ -84,6 +87,10 @@ a {
   display: flex;
   flex: 1;
   background-color: grey;
+  height: 222px;
+  min-width: 435px;
+  max-width: 435px;
+  align-self: center;
 }
 
 .hero-right p {
@@ -123,6 +130,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   width: 175px;
+  gap: 10px;
 }
 
 .box {
@@ -163,12 +171,54 @@ h2 {
   margin: 0;
 }
 
+.call-section {
+  display: flex;
+  padding: 90px 0;
+  margin: 0 20px;
+}
+
+.call-content {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background-color: #3882f6;
+  padding: 45px 20px;
+  color: white;
+  border-radius: 7px;
+  width: 900px;
+  min-width: 0;
+  gap: 20px;
+}
+
+.call-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* flex: 1; */
+}
+
+.call-right {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.call-section h3,
+p {
+  margin: 0;
+}
+
 button {
   background-color: #3882f6;
   color: #f9faf8;
   padding: 6px 22px;
   border-radius: 5px;
   border: 0;
+  flex-shrink: 0;
+}
+
+button.white-border {
+  border: solid 1px white;
 }
 
 .footer {
